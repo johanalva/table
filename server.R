@@ -18,8 +18,8 @@ shinyServer(function(input, output, session) {
     })
     
     # close the R session when Chrome closes
-    session$onSessionEnded(function() {
-        stopApp()
-        q("no")
-    })
+    # session$onSessionEnded(function() {
+    #     stopApp()
+    #     q("no")
+    # })
 })
